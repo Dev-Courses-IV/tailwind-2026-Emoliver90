@@ -4,12 +4,218 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- libreria para el icono -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+    <!--            -->
     <link rel="stylesheet" href="./src/style.css">
     <title>ejercicio-tailwind</title>
   </head>
-  <body>
-      <h1 class="text-3xl font-bold underline text-emerald-500">
-    Hello world!
-  </h1>
+<!-- Actividad 1 -->
+  <!-- <body class="bg-white">
+    <header>
+      <div class="flex flex-row-reverse cursor-pointer">
+        <div class="p-6 hover:bg-sky-700"> 
+          <p>
+            About
+          </p>
+        </div>
+        <div class="p-6 hover:bg-sky-700 text-slate-950"> 
+          <p>
+            Work
+          </p>
+        </div>
+      </div>
+      </header>
+    <main class="p-6">
+      <div class="grid grid-cols-[22rem]">
+        <h1 class="text-2xl font-bold col-start-1 col-span-1 text-slate-950">
+          I'm a digital product designer from the world
+        </h1>
+      </div>
+      <div class="grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_1fr] gap-4 ">
+        <div class="col-start-1 col-span-3 grid grid-rows-[1fr_4rem] gap-4">
+          <img src="https://www.nintendo.com/eu/media/images/10_share_images/portals_3/2x1_SuperMarioHub.jpg" 
+        alt="mario">
+          <ul class="list-none  row-start-2 col-span-1">
+              <li class="text-slate-950 hover:bg-sky-700 cursor-pointer">Proyect Name</li>
+              <li class="hover:bg-sky-700 cursor-pointer">Product Design</li>
+            </ul>  
+        </div>
+        <div class="col-start-1 col-span-1 grid grid-rows-[1fr_8rem]">
+          <img src="https://images.pexels.com/photos/34703257/pexels-photo-34703257.png"
+         alt="Rio y bosque">
+          <ul class="list-none  row-start-2 col-span-1">
+              <li class="text-slate-950 hover:bg-sky-700 cursor-pointer">Proyect Name</li>
+              <li class="hover:bg-sky-700 cursor-pointer">Product Design</li>
+            </ul>  
+        </div>
+        <div class="col-start-2 col-span-1 grid grid-rows-[1fr_8rem] ">
+          <img src="https://images.pexels.com/photos/36159308/pexels-photo-36159308.jpeg"
+         alt="cabaña en el lago">
+          <ul class="list-none  row-start-2 col-span-1">
+              <li class="text-slate-950 hover:bg-sky-700 cursor-pointer">Proyect Name</li>
+              <li class="hover:bg-sky-700 cursor-pointer">Product Design</li>
+        </div>
+        <div class="col-start-3 col-span-1 grid grid-rows-[1fr_8rem]">
+          <img src="https://images.pexels.com/photos/16774853/pexels-photo-16774853.jpeg" 
+         alt="caballo marron y blanco en el campo">
+          <ul class="list-none  row-start-2 col-span-1">
+              <li class="text-slate-950 hover:bg-sky-700 cursor-pointer">Proyect Name</li>
+              <li class="hover:bg-sky-700 cursor-pointer">Product Design</li>
+        </div>  
+      </div>
+    </main>
+    <footer>
+      <div class="flex flex-cols-[1fr_1fr] justify-between p-6">
+        <p class="hover:text-blue-700 cursor-pointer">Get in touch</p>
+        <div class="flex flex-cols-[1fr_1fr] gap-3">
+          <i class="fi fi-brands-twitter hover:bg-sky-700 cursor-pointer"></i>
+          <i class="fi fi-brands-linkedin hover:bg-sky-700 cursor-pointer"></i>
+        </div>
+      </div>    
+    </footer>      
   </body>
-</html>
+</html> -->
+<!-- Actividad 2 -->
+  <!-- <body class="bg-gradient-to-b from-purple-950 via-purple-500 to-purple-400 p-8">
+    <header>
+      <div class="flex justify-center uppercase gap-20 p-6" style="text-shadow: 0px 2px 3px rgba(50,10,100,0.6);">
+ AYUDA PARA QUE EL SUBRAYADO NO OCUPE TODA LA PALABRA 
+      relative → Permite que los after: se posicionen respecto a este elemento
+     font-bold → Texto en negrita
+     text-white → Texto blanco 
+     after:content-[''] → Crea el pseudo-elemento vacío (sin esto no aparece nada)
+     after:absolute → Lo saca del flujo normal y lo posiciona libremente
+     after:bottom-[-4px] → Lo coloca 4px POR DEBAJO del texto 
+     after:left-1/2 → Mueve el inicio de la línea al centro del elemento
+     after:-translate-x-1/2 → La desplaza hacia la izquierda la mitad de su propio ancho
+     (estos dos juntos = centrado perfecto ↔)
+     after:w-1/2 → La línea mide el 50% del ancho del texto
+     after:h-[2px] → La línea tiene 2px de alto (grosor)
+     after:bg-white → La línea es de color blanco
+     hover:after:w-3/4 → Al pasar el mouse, la línea crece al 75% del ancho
+     after:transition-all → Suaviza cualquier cambio de propiedad
+     after:duration-300 → La animación dura 300ms
+        <h2 class="relative 
+      font-bold 
+      text-white
+      after:content-[''] 
+      after:absolute 
+      after:bottom-[-4px] 
+      after:left-3
+      after:w-11 
+      after:h-[2px] 
+      after:bg-purple-300
+      hover:after:w-[2rem]
+      after:transition-all
+      after:duration-300">
+      home
+        </h2>
+        <h2 class="relative font-bold text-white
+      after:content-[''] 
+      after:absolute 
+      after:bottom-[-4px] 
+      after:left-4
+      after:w-12 
+      after:h-[2px] 
+      after:bg-purple-300
+      hover:after:w-[2rem]
+      after:transition-all
+      after:duration-300">
+      About
+        </h2>
+        <h2 class="relative font-bold text-white
+      after:content-[''] 
+      after:absolute 
+      after:bottom-[-4px] 
+      after:left-6 
+      after:w-3/4
+      after:h-[2px] 
+      after:bg-purple-300
+      hover:after:w-[4rem]
+      after:transition-all
+      after:duration-300">
+      my Projects
+        </h2>
+      </div>
+    </header>
+    <main>
+      <div class="grid grid-rows-[1fr_2fr] grid-cols-3 gap-6" 
+      style="text-shadow: 0px 2px 4px rgba(74,20,140,0.8), 0px 4px 12px rgba(74,20,140,0.5);">
+        <div class="col-start-1 col-span-3 row-start-1 ml-10">
+          <h1 class=" text-6xl font-bold text-purple-400 uppercase relative 
+        after:content-['']
+        after:absolute
+        after:bottom-[-1rem]
+        after:left-2
+        after:w-[17rem] 
+        after:h-[3px]
+        after:bg-purple-400">
+        my Projects
+          </h1>
+        </div>
+        <div class="grid grid-rows-2 justify-items-center mr-10 gap-6">
+         card 1 
+          <img class="rounded-xl shadow-[8px_8px_4px_0px_rgba(74,20,140,0.5)] h-32"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwc1qlnB1OThvYNy6W2fmYxEHxNy8AkUKquA&s"
+           alt="zara web">
+          <div class="justify-items-center text-white">
+            <h3 class="uppercase relative after:content-['']
+        after:absolute
+        after:bottom-[-8px]
+        after:right-1
+        after:w-[9rem] 
+        after:h-[2px]
+        after:bg-purple-400 mb-4">meerzari clothing</h3>
+          <p class="justify-items-center whitespace-pre">Store Development, Digital Marketing, 
+        Branding, External Integration.</p>
+          </div>
+        </div>
+        <div class="grid grid-rows-2 justify-items-center gap-6">
+         card 2 
+          <img class="rounded-xl shadow-[8px_8px_4px_0px_rgba(74,20,140,0.5)] h-32"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTomp44NCdy7eOHgik9BxLjZIeRACJw7lJABg&s" 
+          alt="perfumes">
+          <div class="justify-items-center text-white">
+            <h3 class="uppercase relative after:content-['']
+        after:absolute
+        after:bottom-[-8px]
+        after:right-1
+        after:w-[9rem] 
+        after:h-[2px]
+        after:bg-purple-400 mb-4">inspired perfumes</h3>
+            <p class="justify-items-center whitespace-pre">Store Development, Digital Marketing, 
+        Branding, External Integration.</p>
+          </div>
+          
+        </div>
+        <div class="grid grid-rows-2 justify-items-center gap-6">
+         card 3 
+          <img class="rounded-xl h-32" 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Xq3OSvaOR6h4L5P_stCCUGr07vAQXw7z4w&s" 
+          alt="ropa mujer">
+          <div class= "justify-items-center text-white">
+            <h3 class="uppercase font-bold relative after:content-['']
+        after:absolute
+        after:bottom-[-8px]
+        after:right-1
+        after:w-[9rem] 
+        after:h-[2px]
+        after:bg-purple-400 mb-4">sarah z clothing</h3>
+            <p class="justify-items-center whitespace-pre">Store Development, Digital Marketing, 
+        Branding, External Integration.</p>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="grid rounded-full shadow-[8px_8px_4px_0px_rgba(74,20,140,0.5)] bg-purple-300 mx-[30rem]">
+        <div class=" justify-self-center text-white font-bold" >
+          <button class="uppercase p-2" style="text-shadow: 0px 2px 3px rgba(50,10,100,0.6);">
+          view more
+          </button>
+        </div>       
+      </div>
+    </footer>
+  </body>
+</html> -->
